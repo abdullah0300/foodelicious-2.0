@@ -142,7 +142,7 @@ body {
 
 hr {
     margin: 1rem 0;
-    color: inherit;
+    color: grey;
     border: 0;
     border-top: 1px solid;
     opacity: .25
@@ -2563,10 +2563,10 @@ progress {
     font-size: .875rem;
     font-weight: 300;
     line-height: 1.5;
-    color: rgba(255, 255, 255, .75);
+    color: rgba(128, 116, 116, 0.75);
     background-color: transparent;
     background-clip: padding-box;
-    border: 1px solid rgba(255, 255, 255, .3);
+    border: 1px solid rgba(94, 88, 88, 0.3);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -28867,7 +28867,7 @@ body .note-modal-backdrop {
 }
 
 .modal.modal-pos .modal-pos-product .modal-pos-product-info .option-list .option .option-label {
-    border: 1px solid rgba(255, 255, 255, .25);
+    border: 1px solid #ff4a17;
     padding: .625rem;
     height: 100%;
     border-radius: 4px;

@@ -175,6 +175,10 @@
                 data-scrollbar="true"
                 data-height="100%"
               >
+
+              <div >
+                <img src="../assets/img/pos/logo.png" style="height: 30px; width: 130px; margin-top: -5%;margin-left: 40%;" alt="">
+              </div>
                 <div class="row gx-4" id="productCardsContainer">
                   <!-- <div
                     class="col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-sm-6 pb-4"
@@ -499,8 +503,12 @@
                       alt=""
                     />
                   </div>
-                  <div class="title">Table 01</div>
-                  <div class="order">Order: <b>#0056</b></div>
+                  <div class="my-btn"> 
+                   <button style=" border-radius: 15px!important;" class="btn active "> Eat</button>
+                   <button style=" border-radius: 15px!important;"  class="btn active"> Taken</button>
+                   <button  style=" border-radius: 15px!important;" class="btn active"> Delivery</button>
+                </div>
+                  <div class="order " style="margin-left: 3%; color: black;" >Order: <b>#0056</b></div>
                 </div>
 
                 <div class="pos-sidebar-nav">
@@ -543,8 +551,8 @@
                         ></div>
                         <div class="flex-1">
                           <div class="h6 mb-1" style="color: grey;">Grill Pork Chop</div>
-                          <div class="small">$12.99</div>
-                          <div class="small mb-2">- size: large</div>
+                          <div class="small" style="color: lightgrey;">$12.99</div>
+                          <div class="small mb-2" style="color: lightgrey;">- size: large</div>
                           <div class="d-flex">
                             <a href="#" class="btn btn-outline-theme btn-sm"
                               ><i class="fa fa-minus"></i
@@ -573,8 +581,8 @@
                         ></div>
                         <div class="flex-1">
                           <div class="h6 mb-1" style="color: grey;">Orange Juice</div>
-                          <div class="small">$5.00</div>
-                          <div class="small mb-2">
+                          <div class="small" style="color: lightgrey;">$5.00</div>
+                          <div class="small mb-2" style="color: lightgrey;">
                             - size: large<br />
                             - less ice
                           </div>
@@ -748,17 +756,17 @@
 
                 <div class="pos-sidebar-footer">
                   <div class="d-flex align-items-center mb-2">
-                    <div>Subtotal</div>
-                    <div class="flex-1 text-end h6 mb-0" style="color: grey;">$30.98</div>
+                    <div style="color: grey;">Subtotal</div>
+                    <div class="flex-1 text-end h6 mb-0" style="color: #e57c35;">$30.98</div>
                   </div>
                   <div class="d-flex align-items-center">
-                    <div>Taxes (6%)</div>
-                    <div class="flex-1 text-end h6 mb-0" style="color: grey;">$2.12</div>
+                    <div style="color: grey;">Taxes (6%)</div>
+                    <div class="flex-1 text-end h6 mb-0" style="color: #e57c35;">$2.12</div>
                   </div>
                   <hr />
                   <div class="d-flex align-items-center mb-2">
-                    <div>Total</div>
-                    <div class="flex-1 text-end h4 mb-0" style="color: grey;">$33.10</div>
+                    <div style="color: grey;">Total</div>
+                    <div class="flex-1 text-end h4 mb-0" style="color: #e57c35;">$33.10</div>
                   </div>
                   <div class="mt-3">
                     <div class="btn-group d-flex">
@@ -1072,31 +1080,31 @@
 
     <div class="modal modal-pos fade" id="modalPosItem">
       <div class="modal-dialog modal-lg">
-        <div class="modal-content border-0">
+        <div class="modal-content border-0"  style="background-color: white;">
           <div class="card">
             <div class="card-body p-0">
               <a
                 href="#"
                 data-bs-dismiss="modal"
-                class="btn-close position-absolute top-0 end-0 m-4"
+                class="btn-close position-absolute top-0 end-0 m-4" style="background-color: black;"
               ></a>
               <div class="modal-pos-product">
                 <!-- <div class="modal-pos-product-img">
 <div class="img" style="background-image: url(../assets/img/pos/product-1.html)"></div>
 </div> -->
-                <div class="modal-pos-product-info">
-                  <div class="h4 mb-2">Grill Chicken Chop</div>
-                  <div class="text-white text-opacity-50 mb-2">
-                    chicken, egg, mushroom, salad
+                <div class="modal-pos-product-info" >
+                  <div class="h4 mb-2" style="color: grey;">Grill Chicken Chop</div>
+                  <div class="text-white text-opacity-50 mb-2" >
+                    <p style="color: grey;">chicken, egg, mushroom, salad</p>
                   </div>
-                  <div class="h4 mb-3">$10.99</div>
+                  <div class="h4 mb-3" style="color: #ff4a17;">$10.99</div>
                   <div class="d-flex mb-3">
                     <a href="#" class="btn btn-outline-theme"
                       ><i class="fa fa-minus"></i
                     ></a>
                     <input
                       type="text"
-                      class="form-control w-50px fw-bold mx-2 bg-white bg-opacity-25 border-0 text-center"
+                      class="form-control w-50px fw-bold mx-2 bg-grey  border-0 text-center"
                       name="qty"
                       value="1"
                     />
@@ -1117,8 +1125,8 @@
                           checked
                         />
                         <label class="option-label" for="size3">
-                          <span class="option-text">Small</span>
-                          <span class="option-price">+0.00</span>
+                          <span class="option-text" style="color: black;" >Small</span>
+                          <span class="option-price" style="color: darkgrey;" >+0.00</span>
                         </label>
                       </div>
                       <div class="option">
@@ -1129,8 +1137,8 @@
                           class="option-input"
                         />
                         <label class="option-label" for="size1">
-                          <span class="option-text">Large</span>
-                          <span class="option-price">+3.00</span>
+                          <span class="option-text" style="color: black;" >Large</span>
+                          <span class="option-price" style="color: darkgrey;" >+3.00</span>
                         </label>
                       </div>
                       <div class="option">
@@ -1141,8 +1149,8 @@
                           class="option-input"
                         />
                         <label class="option-label" for="size2">
-                          <span class="option-text">Medium</span>
-                          <span class="option-price">+1.50</span>
+                          <span class="option-text" style="color: black;" >Medium</span>
+                          <span class="option-price" style="color: darkgrey;" >+1.50</span>
                         </label>
                       </div>
                     </div>
@@ -1159,8 +1167,8 @@
                           id="addon1"
                         />
                         <label class="option-label" for="addon1">
-                          <span class="option-text">More BBQ sos</span>
-                          <span class="option-price">+0.00</span>
+                          <span class="option-text" style="color: black;" >More BBQ sos</span>
+                          <span class="option-price" style="color: darkgrey;" >+0.00</span>
                         </label>
                       </div>
                       <div class="option">
@@ -1172,8 +1180,8 @@
                           id="addon2"
                         />
                         <label class="option-label" for="addon2">
-                          <span class="option-text">Extra french fries</span>
-                          <span class="option-price">+1.00</span>
+                          <span class="option-text" style="color: black;" >Extra french fries</span>
+                          <span class="option-price" style="color: darkgrey;" >+1.00</span>
                         </label>
                       </div>
                       <div class="option">
@@ -1185,8 +1193,8 @@
                           id="addon3"
                         />
                         <label class="option-label" for="addon3">
-                          <span class="option-text">Mushroom soup</span>
-                          <span class="option-price">+3.50</span>
+                          <span class="option-text" style="color: black;" >Mushroom soup</span>
+                          <span class="option-price" style="color: darkgrey;" >+3.50</span>
                         </label>
                       </div>
                       <div class="option">
@@ -1198,8 +1206,8 @@
                           id="addon4"
                         />
                         <label class="option-label" for="addon4">
-                          <span class="option-text">Lemon Juice (set)</span>
-                          <span class="option-price">+2.50</span>
+                          <span class="option-text" style="color: black;" >Lemon Juice (set)</span>
+                          <span class="option-price" style="color: darkgrey;" >+2.50</span>
                         </label>
                       </div>
                     </div>
