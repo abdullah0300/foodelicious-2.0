@@ -5,7 +5,7 @@ const addListItemNav = function (name, id) {
   return `<li class="nav-item category-nav-item" data-category='${id}'>
   <a class="nav-link" href="#" data-filter="all">
     <div class="card">
-      <div class="card-body" style="color: black;">${name}</div>
+      <div class="card-body" style="color: grey ;">${name}</div>
     </div>
   </a>
   </li>`;
@@ -32,7 +32,7 @@ const addProductsListCards = (id, name, image) => {
           "
         ></div>
         <div class="info">
-          <div class="title">${name}</div>
+          <div class="title" style="color: grey;">${name}</div>
         </div>
       </a>
     </div>
