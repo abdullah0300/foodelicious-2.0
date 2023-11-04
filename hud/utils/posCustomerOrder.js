@@ -3,8 +3,8 @@ const apiUrl = "http://127.0.0.1:9090";
 const addListItemNav = function (name, id, handleSelect) {
   return `<li class="nav-item" data-category='${id}' onclick=${handleSelect}>
   <a class="nav-link active" href="#" data-filter="all">
-    <div class="card">
-      <div class="card-body">${name}</div>
+    <div class="card" >
+      <div class="card-body"  style="color: black;">${name}</div>
     </div>
   </a>
   </li>`;
