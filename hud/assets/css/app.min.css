@@ -108,7 +108,7 @@
     --bs-border-radius-xl: 1rem;
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
-    --bs-heading-color: black;
+    --bs-heading-color: white;
     --bs-link-color: #3cd2a5;
     --bs-link-hover-color: rgba(60, 210, 165, 0.5);
     --bs-code-color: #f34fa0;
@@ -5183,7 +5183,7 @@ fieldset:disabled .btn {
 
 .nav-tabs {
     --bs-nav-tabs-border-width: 1px;
-    --bs-nav-tabs-border-color: rgba(255, 255, 255, 0.3);
+    --bs-nav-tabs-border-color: black;
     --bs-nav-tabs-border-radius: 4px;
     --bs-nav-tabs-link-hover-border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent;
     --bs-nav-tabs-link-active-color: black;
@@ -7677,7 +7677,7 @@ fieldset:disabled .btn {
     --bs-modal-width: 500px;
     --bs-modal-padding: 1rem;
     --bs-modal-margin: 0.5rem;
-    --bs-modal-bg: none;
+    --bs-modal-bg: grey;
     --bs-modal-border-color: rgba(255, 255, 255, 0.3);
     --bs-modal-border-width: 1px;
     --bs-modal-border-radius: 0;
@@ -28797,14 +28797,18 @@ body .note-modal-backdrop {
 
 @media (min-width:992px) {
     .modal.modal-pos .modal-pos-product {
-        display: flex
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .modal.modal-pos .modal-pos-product .modal-pos-product-img,
     .modal.modal-pos .modal-pos-product .modal-pos-product-info {
         width: 50%;
         max-width: 50%;
-        flex: 0 0 50%
+        flex: 0 0 50%;
+        min-width: fit-content;
     }
 }
 
@@ -28828,7 +28832,7 @@ body .note-modal-backdrop {
 
 .modal.modal-pos .modal-pos-product .modal-pos-product-info {
     padding: 1.5rem;
-    border-left: 1px solid rgba(255, 255, 255, .3)
+    /* border-left: 1px solid rgba(255, 255, 255, .3) */
 }
 
 .modal.modal-pos .modal-pos-product .modal-pos-product-info .option-list {
