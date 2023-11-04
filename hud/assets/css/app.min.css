@@ -24456,7 +24456,7 @@ body:before {
     right: 15px;
     top: 0;
     bottom: 0;
-    
+
 }
 
 .card:not(.border-0):after {
@@ -24464,7 +24464,7 @@ body:before {
     bottom: 15px;
     left: 0;
     right: 0;
-  
+
 }
 
 .card>:not(.card-arrow):not(.card-img-overlay):not(.card-img):not(.hljs-container) {
@@ -28099,7 +28099,8 @@ body .note-modal-backdrop {
 }
 
 .pos .pos-content {
-    flex: 1
+    flex: 1;
+    overflow: auto !important;
 }
 
 @media (min-width:992px) {
