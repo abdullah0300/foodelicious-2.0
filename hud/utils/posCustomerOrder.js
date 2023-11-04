@@ -4,7 +4,7 @@ const productCardsContainer = document.querySelector("#productCardsContainer");
 const addListItemNav = function (name, id) {
   return `<li class="nav-item category-nav-item" data-category='${id}'>
   <a class="nav-link" href="#" data-filter="all">
-    <div class="card">
+    <div class="card" style=" border-radius:10px; border-color:#e57c35 "  >
       <div class="card-body" style="color: grey ;">${name}</div>
     </div>
   </a>
@@ -17,7 +17,7 @@ const addProductsListCards = (id, name, image) => {
   data-type="meat"
   data-category="${id}"
   >
-  <div class="card h-100">
+  <div class="card h-100" style="border-radius:10px; border-color:#e57c35">
     <div class="card-body h-100 p-1">
       <a
         href="#"
@@ -27,11 +27,11 @@ const addProductsListCards = (id, name, image) => {
       >
         <div
           class="img"
-          style="
+          style="border-radius:10px;
             background-image: url(../assets/img/pos/countryside.jpg);
           "
         ></div>
-        <div class="info">
+        <div class="info" >
           <div class="title" style="color: grey;">${name}</div>
         </div>
       </a>

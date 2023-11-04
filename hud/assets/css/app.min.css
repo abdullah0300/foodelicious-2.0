@@ -5183,13 +5183,13 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs {
-    --bs-nav-tabs-border-width: 1px;
-    --bs-nav-tabs-border-color: black;
+    --bs-nav-tabs-border-width: 1px ;
+    --bs-nav-tabs-border-color: grey;
     --bs-nav-tabs-border-radius: 4px;
-    --bs-nav-tabs-link-hover-border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent;
-    --bs-nav-tabs-link-active-color: black;
+    --bs-nav-tabs-link-hover-border-color: grey grey transparent;
+    --bs-nav-tabs-link-active-color: grey;
     --bs-nav-tabs-link-active-bg: transparent;
-    --bs-nav-tabs-link-active-border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent;
+    --bs-nav-tabs-link-active-border-color: grey grey transparent;
     border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color)
 }
 
@@ -27963,7 +27963,7 @@ body .note-modal-backdrop {
     }
 
     .pos .pos-container>div+div {
-        border-left: 1px solid grey
+        /* border-left: 1px solid grey */
     }
 }
 
