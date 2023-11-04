@@ -146,6 +146,7 @@ hr {
     border: 0;
     border-top: 1px solid;
     opacity: .25
+
 }
 
 .h1,
@@ -5144,7 +5145,7 @@ fieldset:disabled .btn {
 .nav {
     --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-color: #3cd2a5;
+    --bs-nav-link-color: black;
     --bs-nav-link-hover-color: rgba(60, 210, 165, 0.5);
     --bs-nav-link-disabled-color: #798e98;
     display: flex;
@@ -5851,6 +5852,7 @@ fieldset:disabled .btn {
 }
 
 .card>hr {
+    color: black;
     margin-right: 0;
     margin-left: 0
 }
@@ -5882,6 +5884,11 @@ fieldset:disabled .btn {
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     color: var(--bs-card-color)
 }
+
+
+
+
+
 
 .card-title {
     margin-bottom: var(--bs-card-title-spacer-y)
@@ -27956,7 +27963,7 @@ body .note-modal-backdrop {
     }
 
     .pos .pos-container>div+div {
-        border-left: 1px solid rgba(255, 255, 255, .3)
+        border-left: 1px solid grey
     }
 }
 
@@ -28209,7 +28216,7 @@ body .note-modal-backdrop {
 }
 
 .pos .pos-sidebar .pos-sidebar-footer {
-    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid grey;
     padding: 1rem 1.5rem
 }
 
@@ -28260,7 +28267,7 @@ body .note-modal-backdrop {
 }
 
 .pos .pos-sidebar .pos-order+.pos-order {
-    border-top: 1px solid rgba(255, 255, 255, .3)
+    border-top: 1px solid black
 }
 
 .pos .pos-header {

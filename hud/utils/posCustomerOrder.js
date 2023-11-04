@@ -1,12 +1,11 @@
 const apiUrl = "http://127.0.0.1:9090";
 const menuNavList = document.querySelector("#menuNav");
 const productCardsContainer = document.querySelector("#productCardsContainer");
-
 const addListItemNav = function (name, id) {
   return `<li class="nav-item category-nav-item" data-category='${id}'>
   <a class="nav-link" href="#" data-filter="all">
     <div class="card">
-      <div class="card-body">${name}</div>
+      <div class="card-body" style="color: black;">${name}</div>
     </div>
   </a>
   </li>`;
