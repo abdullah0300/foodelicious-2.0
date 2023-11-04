@@ -27967,7 +27967,7 @@ body .note-modal-backdrop {
 
 @media (min-width:992px) {
     .pos .pos-menu {
-        width: 140px;
+        /* width: 140px; */
         flex-direction: column
     }
 }
