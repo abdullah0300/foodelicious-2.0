@@ -129,7 +129,8 @@ const findClickedProduct = async (subCategoryId, productId) => {
 //   });
 // };
 
-posModal.addEventListener("shown.bs.modal", async (e) => {
+posModal.addEventListener("show.bs.modal", async (e) => {
+  e.target.querySelector("#modal-steps").innerHTML = "";
   console.log(e.relatedTarget.dataset.productid);
   const subcategory = await findSubCategory(currentSubCategoryId);
   const [clickedProduct] = await findClickedProduct(
@@ -138,4 +139,48 @@ posModal.addEventListener("shown.bs.modal", async (e) => {
   );
   console.log(subcategory, "subcat");
   console.log(clickedProduct, "clickedProduct");
+
+  e.target.querySelector("#modal-title").textContent = clickedProduct.name;
+  e.target.querySelector("#modal-description").textContent =
+    clickedProduct.description;
+  e.target.querySelector(
+    "#modal-price"
+  ).textContent = `${clickedProduct.price} £`;
+
+  subcategory.stepsToChoose.forEach((step) => {
+    e.target
+      .querySelector("#modal-steps")
+      .insertAdjacentHTML("beforeend", modalOptionsHtml(step));
+  });
+  // console.log(modalOptionsHtml(subcategory.stepsToChoose[0]));
+
+  // add to cart functionality
 });
+
+function modalOptionsHtml(stepToChoose) {
+  return `<div id="stepToChoose" class="mb-2">
+  <div id="stepName" class="fw-bold" style="color: black">${
+    stepToChoose.stepName
+  }</div>
+  <div class="option-list">
+    ${stepToChoose.options.map((op) => {
+      return `<div class="option">
+      <input
+        type="checkbox"
+        id="${op._id}"
+        name="${stepToChoose.stepName}"
+        class="option-input"
+      />
+      <label class="option-label" for="${op._id}">
+        <span class="option-text" style="color: black"
+          >${op.type}</span
+        >
+        <span class="option-price" style="color: darkgrey"
+          >+${op.price}£</span
+        >
+      </label>
+    </div>`;
+    })}
+  </div>
+</div>`;
+}
