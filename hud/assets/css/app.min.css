@@ -5,8 +5,8 @@
     --bs-blue: #4e9cff;
     --bs-indigo: #bba4ff;
     --bs-purple: #de8cff;
-    --bs-pink: #f34fa0;
-    --bs-red: #ff6060;
+    --bs-pink: #e57c35;
+    --bs-red: #e57c35;
     --bs-orange: #ff9f0c;
     --bs-yellow: #f9e80d;
     --bs-green: #1ecc33;
@@ -26,7 +26,7 @@
     --bs-gray-800: #35434a;
     --bs-gray-900: #273136;
     --bs-default: #a8b6bc;
-    --bs-theme: #3cd2a5;
+    --bs-theme: white;
     --bs-primary: #4e9cff;
     --bs-secondary: #798e98;
     --bs-warning: #ff9f0c;
@@ -38,8 +38,8 @@
     --bs-white: black;
     --bs-purple: #de8cff;
     --bs-indigo: #bba4ff;
-    --bs-red: #ff6060;
-    --bs-pink: #f34fa0;
+    --bs-red: #e57c35;
+    --bs-pink: #e57c35;
     --bs-green: #1ecc33;
     --bs-yellow: #f9e80d;
     --bs-teal: #3cd2a5;
@@ -56,7 +56,7 @@
     --bs-gray-800: #35434a;
     --bs-gray-900: #273136;
     --bs-default-rgb: 168, 182, 188;
-    --bs-theme-rgb: 60, 210, 165;
+    --bs-theme-rgb: 255, 255, 255;
     --bs-primary-rgb: 78, 156, 255;
     --bs-secondary-rgb: 121, 142, 152;
     --bs-warning-rgb: 255, 159, 12;
@@ -68,8 +68,8 @@
     --bs-white-rgb: 255, 255, 255;
     --bs-purple-rgb: 222, 140, 255;
     --bs-indigo-rgb: 187, 164, 255;
-    --bs-red-rgb: 255, 96, 96;
-    --bs-pink-rgb: 243, 79, 160;
+    --bs-red-rgb: 229, 124, 53;
+    --bs-pink-rgb: 229, 124, 53;
     --bs-green-rgb: 30, 204, 51;
     --bs-yellow-rgb: 249, 232, 13;
     --bs-teal-rgb: 60, 210, 165;
@@ -133,7 +133,7 @@ body {
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
-    color: var(--bs-body-color);
+    color: black;
     text-align: var(--bs-body-text-align);
     background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
@@ -165,7 +165,7 @@ h6 {
     margin-bottom: .5rem;
     font-weight: 600;
     line-height: 1.2;
-    color: var(--bs-heading-color)
+    color: #e57c35
 }
 
 .h1,
@@ -2287,11 +2287,11 @@ progress {
 }
 
 .table {
-    --bs-table-color: rgba(255, 255, 255, 0.75);
+    /* --bs-table-color: rgba(255, 255, 255, 0.75); */
     --bs-table-bg: transparent;
     --bs-table-border-color: rgba(255, 255, 255, 0.3);
     --bs-table-accent-bg: transparent;
-    --bs-table-striped-color: rgba(255, 255, 255, 0.75);
+    /* --bs-table-striped-color: rgba(255, 255, 255, 0.75); */
     --bs-table-striped-bg: rgba(255, 255, 255, 0.1);
     --bs-table-active-color: rgba(255, 255, 255, 0.75);
     --bs-table-active-bg: rgba(255, 255, 255, 0.15);
@@ -11503,7 +11503,6 @@ fieldset:disabled .btn {
 
 .text-white {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important
 }
 
 .text-purple {
@@ -19811,9 +19810,9 @@ fieldset:disabled .btn {
 }
 
 :root .theme-red {
-    --bs-theme: #ff6060 !important;
-    --bs-theme-rgb: 255, 96, 96 !important;
-    --bs-border-color: #ff6060 !important
+    --bs-theme: black !important;
+    --bs-theme-rgb: black !important;
+    --bs-border-color: black !important
 }
 
 .text-red-100 {
@@ -23019,27 +23018,27 @@ fieldset:disabled .btn {
 }
 
 .bg-cover-2:after {
-    background-image: url(images/.jpg)
+    background-image: url(../img/cover/bg.jpg)
 }
 
 .bg-cover-none:after {
-    background-color: var(--bs-body-bg)
+    background-color: none;
 }
 
 .bg-cover-5:after {
-    background-image: url(images/cover-5.jpg)
+    background-image: url(../img/cover/bg.jpg)
 }
 
 .bg-cover-none:after {
-    background-color: var(--bs-body-bg)
+    background-color: none;
 }
 
 .bg-cover-6:after {
-    background-image: url(images/cover-6.html)
+    background-image: url(../img/cover/bg.jpg)
 }
 
 .bg-cover-none:after {
-    background-color: var(--bs-body-bg)
+    background-color: none;
 }
 
 .flex-1 {
@@ -23126,7 +23125,7 @@ fieldset:disabled .btn {
 html {
     height: 100%;
     background-color: #273136;
-    background-image: linear-gradient(180deg, rgba(50, 70, 80, .9) 0, #0d101b 100%)
+    /* background-image: linear-gradient(180deg, rgba(50, 70, 80, .9) 0, #0d101b 100%) */
 }
 
 html:before {
@@ -23137,7 +23136,7 @@ html:before {
     right: 0;
     height: 100%;
     z-index: -5;
-    background: linear-gradient(180deg, rgba(50, 70, 80, .9) 0, #0d101b 100%)
+    /* background: linear-gradient(180deg, rgba(50, 70, 80, .9) 0, #0d101b 100%) */
 }
 
 html:after {
@@ -23149,8 +23148,8 @@ html:after {
     right: 0;
     z-index: -10;
     background-color: #273136;
-    background-image: linear-gradient(180deg, rgba(50, 70, 80, .9) 0, #0d101b 100%);
-    background-image: url(images/cover.jpg);
+    /* background-image: linear-gradient(180deg, rgba(50, 70, 80, .9) 0, #0d101b 100%); */
+    background-image: url(../img/cover/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: initial;
@@ -23386,7 +23385,7 @@ body:before {
 
 .app-header .menu .menu-item .menu-link {
     text-decoration: none;
-    color: #fff;
+    color: black;
     position: relative;
     padding: .5rem 1rem;
     display: flex;
@@ -23543,14 +23542,14 @@ body:before {
     padding: 1rem 1rem .5rem;
     font-size: .65625rem;
     font-weight: 600;
-    color: rgba(255, 255, 255, .3)
+    /* color: rgba(255, 255, 255, .3) */
 }
 
 .app-sidebar .app-sidebar-content .menu .menu-item .menu-link {
     text-decoration: none;
     position: relative;
     padding: .3rem 1rem;
-    color: rgba(255, 255, 255, .5);
+    color: black;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -23579,7 +23578,7 @@ body:before {
 
 .app-sidebar .app-sidebar-content .menu .menu-item .menu-link:focus,
 .app-sidebar .app-sidebar-content .menu .menu-item .menu-link:hover {
-    color: #fff
+    color: #e57c35
 }
 
 .app-sidebar .app-sidebar-content .menu .menu-item .menu-submenu {
@@ -23594,7 +23593,7 @@ body:before {
 }
 
 .app-sidebar .app-sidebar-content .menu .menu-item.active:not(.has-sub)>.menu-link {
-    color: #fff
+    color: black
 }
 
 .app-sidebar .app-sidebar-content .menu .menu-item.active>.menu-link .menu-icon {
@@ -24397,9 +24396,9 @@ body:before {
 }
 
 .card {
-    --bs-border-color: black;
+    --bs-border-color: #e57c35;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid #e57c35;
 }
 
 .card.card-expand {
@@ -25028,7 +25027,7 @@ a:hover {
 }
 
 .page-header {
-    color: #fff;
+    color: black;
     padding: 0;
     border: none;
     margin-bottom: 1rem;
@@ -28267,7 +28266,7 @@ body .note-modal-backdrop {
 }
 
 .pos .pos-sidebar .pos-order+.pos-order {
-    border-top: 1px solid black
+    border-top: none;
 }
 
 .pos .pos-header {

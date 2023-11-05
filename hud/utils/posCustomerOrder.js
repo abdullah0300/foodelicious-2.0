@@ -8,7 +8,7 @@ const addListItemNav = function (name, id) {
   return `<li class="nav-item category-nav-item" data-category='${id}'>
   <a class="nav-link" href="#" data-filter="all">
     <div class="card" style=" border-radius:10px; border-color:#e57c35 "  >
-      <div class="card-body" style="color: grey ;">${name}</div>
+      <div class="card-body active" style="color: grey ;">${name}</div>
     </div>
   </a>
   </li>`;
